@@ -23,7 +23,7 @@ class MyStreamer(TwythonStreamer):
   def on_success(self, data):
     if ('place' in data and data['place'] is not None) or ('location' in data['user'] and data['user']['location'] is not None):
       print(datetime.now())
-      f.write(json.dumps(data) + ',\n')
+      f.write(json.dumps(data) + '\n')
 
   def on_error(self, status_code, data):
     print(status_code)
@@ -32,4 +32,4 @@ class MyStreamer(TwythonStreamer):
 
 stream = MyStreamer(consumer_key, consumer_secret, access_key, access_secret)
 for i in range(10):
-  stream.statuses.filter(track = 'corona',language='en')
+  stream.statuses.filter(language='en')
