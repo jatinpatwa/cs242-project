@@ -4,10 +4,8 @@ Repository of a course project for CS 242 - Information Retrieval and Web Search
 ## `Authors`
 
 Arasanagatta Ramasesha, Rithika <br> 
-Liu, Tianyu <br>
 Patwa, Jatin <br>
 Vinayak, Shreshta <br>
-Yan, Jie <br>
 
 ## `Clone this Repository`
 
